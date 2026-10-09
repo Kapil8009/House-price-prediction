@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rent Prediction</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="result-container">
+
+    <h1>🏠 Prediction Result</h1>
+
+    <p>Estimated Monthly Rent</p>
+
+    <h2>₹ {{ "{:,}".format(prediction) }}</h2>
+
+    <a href="/">
+        Predict Another House
+    </a>
+
+</div>
+
+</body>
+
+</html>

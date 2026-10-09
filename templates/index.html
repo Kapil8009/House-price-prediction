@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>House Rent Prediction</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏠 House Rent Prediction</h1>
+
+    <form action="/predict" method="POST">
+
+        <label>BHK</label>
+        <input type="number"
+               name="BHK"
+               min="1"
+               required>
+
+
+        <label>Size (sq ft)</label>
+        <input type="number"
+               name="Size"
+               min="100"
+               required>
+
+
+        <label>Floor</label>
+        <input type="text"
+               name="Floor"
+               required>
+
+
+        <label>Area Type</label>
+        <select name="Area_Type" required>
+            <option value="">Select</option>
+            <option value="Super Area">Super Area</option>
+            <option value="Carpet Area">Carpet Area</option>
+            <option value="Built Area">Built Area</option>
+        </select>
+
+
+        <label>Area Locality</label>
+        <input type="text"
+               name="Area_Locality"
+               required>
+
+
+        <label>City</label>
+        <input type="text"
+               name="City"
+               required>
+
+
+        <label>Furnishing Status</label>
+        <select name="Furnishing_Status" required>
+            <option value="">Select</option>
+            <option value="Furnished">Furnished</option>
+            <option value="Semi-Furnished">Semi-Furnished</option>
+            <option value="Unfurnished">Unfurnished</option>
+        </select>
+
+
+        <label>Tenant Preferred</label>
+        <select name="Tenant_Preferred" required>
+            <option value="">Select</option>
+            <option value="Bachelors/Family">
+                Bachelors/Family
+            </option>
+            <option value="Bachelors">
+                Bachelors
+            </option>
+            <option value="Family">
+                Family
+            </option>
+        </select>
+
+
+        <label>Bathroom</label>
+        <input type="number"
+               name="Bathroom"
+               min="1"
+               required>
+
+
+        <label>Point of Contact</label>
+        <select name="Point_of_Contact" required>
+            <option value="">Select</option>
+            <option value="Contact Owner">Contact Owner</option>
+            <option value="Contact Agent">Contact Agent</option>
+            <option value="Contact Builder">Contact Builder</option>
+        </select>
+
+
+        <button type="submit">
+            Predict Rent
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
