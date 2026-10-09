@@ -6,6 +6,9 @@ The **House Rent Prediction** project is a machine learning web application buil
 
 The application uses a trained machine learning model to generate rent predictions through a simple web interface.
 
+Real time Prject Link Project - https://house-price-prediction-esc9.onrender.com/
+
+
 ## ✨ Features
 
 * Predict house rent based on property details.
